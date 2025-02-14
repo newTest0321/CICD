@@ -45,8 +45,8 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 
-    - name: Install jq
-      run: sudo apt-get && sudo apt-get install jq -y
+    # - name: Install jq
+    #   run: sudo apt-get && sudo apt-get install jq -y
 
     - name: SonarQube Quality Gate check
       id: sonarqube-quality-gate-check
